@@ -83,7 +83,7 @@ public class Beamflow {
                         .withWriteDisposition(BigQueryIO.Write.WriteDisposition.WRITE_TRUNCATE)
                         .withCreateDisposition(BigQueryIO.Write.CreateDisposition.CREATE_IF_NEEDED)
         );
-
+        // run program
         pl.run().waitUntilFinish();
 
     }
